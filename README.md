@@ -1,7 +1,7 @@
 # README
 
 I bring much commitment to video-editing, coding, and to the common approach required for both to take shape.
-This app is an illustration of that mindset and skills-mix.
+This app is a live illustration of that mindset and mix.
 
 Things you may want to cover:
 
