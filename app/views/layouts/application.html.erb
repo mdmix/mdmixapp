@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>mdmixapp</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syncopate|Cousine|Fugaz+One|Monofett|Abril+Fatface">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
 
-    <nav>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", simple_pages_about_path %></li>
-        <li><%= link_to "Contact", simple_pages_contact_path %></li>
-      </ul>
-    </nav>
+  <main class="page-wrap">
+
+    <!--navbar starts here-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+      <div class="container-fluid nav-fluid">
+        <div class="navbar-header" id="nav-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <div class="mdmix navbar-brand">
+            <%= link_to "Home", root_path %>
+          </div><!--end mdmix -->
+        </div><!-- navbar header -->
+        <div class="navbar-collapse collapse nav-box" id="nav-box">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "About", simple_pages_about_path %></li>
+            <li><%= link_to "Contact", simple_pages_contact_path %></li>
+          </ul>
+        </div><!-- end nav -->
+      </div><!-- end nav container -->
+    </nav><!-- end navbar-->
+    <div class="anchor">
+    </div>
 
     <%= yield %>
 
+  </main>
+
     <footer>
-      &copy; 2018 The Mixer
+      <span>&copy; 2018 The Mixer</span>
     </footer>
 
   </body>

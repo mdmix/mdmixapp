@@ -1,3 +1,242 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #FFE5CC;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  height: auto;
+  /* equal to footer height */
+  margin-bottom: -2.5em;
+  padding-bottom: 2.5em;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.head-on {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#navbar {
+  z-index: 999;
+  width: 100%;
+  background-color: #5AD4C2;
+  padding-left: 0px;
+  padding-right: 0px;
+  // padding-bottom: 9px;
+}
+
+h1, h2, p, footer {
+  text-align: center;
+}
+
+.mdmix>a {
+  color: yellow;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  position: relative;
+  // left: 89px;
+  top: 0.3em;
+  transition: all 0.9s ease;
+  -webkit-transition: all 0.9s ease;/* Safari */
+}
+
+.mdmix>a:link {
+  text-decoration-line: none;
+}
+
+.mdmix>a:hover {
+  font-size: calc(1.4em + 2vw);
+}
+
+.mdmix>a:focus {
+  color: #FFE5CC;
+}
+
+
+/*NAVBAR LOOK*/
+
+#navbar li a:link, #nav-box .button:link, #navbar li a:visited {
+  color: #ff0;
+  text-decoration-line: none;
+}
+
+#navbar li a:active, #navbar li a:visited {
+  color: #ff0;
+  text-decoration-line: none;
+  // background-color: black;
+  // transition: 2s;
+  // -webkit-transition: 2s;
+}
+
+#navbar li a:hover, #nav-box .button:hover, #nav-box .button:active {
+  text-decoration-line: overline;
+  color: #F77E14;
+}
+
+#navbar li a:focus, #nav-box .button:focus {
+  color: #FFE5CC;
+}
+
+#nav-box>ul {
+  position: relative;
+  transform: translateY(13%);
+}
+
+// .navbar-inverse .navbar-nav>.active>a:visited, .navbar-inverse .dropdown-menu>.active>a:visited, .navbar-inverse .navbar-nav>.active>#dropdown:visited {
+//     background-color: black;
+// }
+
+#dropdownMenu1, .dropdown-menu {
+  color: #ff0;
+  background-color: #5AD4C2;
+}
+
+#dropdownMenu1 {
+  height: 63px;
+}
+
+#dropdownMenu1 span {
+  position: relative;
+  bottom: 15px;
+}
+
+.dropdown-menu>li>a {
+  height: 63px;
+  padding: 0px;
+}
+
+.dropdown-menu>li>#stuff {
+  padding-right: 37px;
+  padding-left: 49px;
+}
+
+.dropdown-menu>li>a:link, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  background-color: #5AD4C2;
+  text-align: right;
+}
+
+.btn-default, .btn-default:hover {
+  border-color: #5AD4C2;
+}
+
+.open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+  border-color: #F77E14;
+  border-width: 6px;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+  background-color: #5AD4C2;
+}
+
+#nav-box a {
+  padding-bottom: 28px;
+}
+
+#navbar li a, #dropdownMenu1 {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  transition: 2s;
+  -webkit-transition: 2s;/* Safari */
+}
+
+.navbar-collapse {
+  padding-bottom: 39px;
+  padding-top: -20px;
+}
+
+.navbar .navbar-toggle {
+  border-color: #F77E14;
+  position: relative;
+  top: 1px;
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #F77E14;
+  border-color: #F77E14;
+}
+
+
+/*MAIN content*/
+
+.anchor {
+  padding-top: 43px;
+}
+
+footer, .page-wrap:after {
+  height: 2.5em;
+}
+
+footer {
+  background: orange;
+  display: table;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+footer span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/* Typography */
+
+h1 {
+  font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+  color: #F77E14;
+  // font-size: 2.5em;
+  font-size: calc(2em + 2.3vw);
+  // font-size: 5vmax;
+}
+
+h2 {
+  font-family: 'Cousine', Arial Black, Impact, sans-serif;
+  font-size: calc(1.2em + 2vw);
+}
+
+p {
+  font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
+  font-size: calc(0.8em + 1.3vw);
+}
+
+.mdmix>a {
+  font-size: calc(1.1em + 2vw);
+  font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+}
+
+.nav a, #dropdownMenu1 {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(2.3em + 1.6vw);
+}
+
+footer {
+  font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+  font-size: 1.3em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .anchor {
+    padding-top: 63px;
+  }
+}
