@@ -1,0 +1,130 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// * {
+//     outline: 1px solid red;
+// }
+
+table {
+  width: 89%;
+  margin: 0 auto;
+}
+
+form {
+  margin-left: 2.3vw;
+}
+
+.links-products {
+  padding-left: 0px;
+}
+
+.links-show, .links-edit {
+  padding-left: 3.9vw;
+  padding-right: 3.9vw;
+}
+
+.links-edit, .links-new {
+  padding-left: 2.6vw;
+  padding-right: 2.6vw;
+}
+
+// tr {
+//   display: inline-block;
+// }
+
+// #name {
+//   display: inline;
+//   width: 33%;
+// }
+//
+// #image {
+//   display: inline;
+//   width: 66%;
+// }
+
+#description {
+  line-height: 300%;
+}
+
+#new-products {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#new-products>a:hover {
+  color: #F77E14;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;/* Safari */
+}
+
+#new-products>a:visited {
+  color: #5AD4C2;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;/* Safari */
+}
+
+label {
+  line-height: 1.3em;
+}
+
+.actions input {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+
+.actions input:hover {
+  color: #F77E14;
+}
+
+.actions>input {
+  // width: 100%;
+  line-height: 1.9em;
+  color: #ff0;
+  background-color: #F77E14;
+}
+
+input, textarea {
+  width: 50%;
+  line-height: 1.9em;
+}
+
+#new-products>a {
+  margin-left: 2.3vw;
+  margin-right: 2.3vw;
+}
+
+// .actions:focus {
+//   outline-color: #F77E14;
+//   width: 50%;
+// }
+
+// col {
+//   width: 50%;
+// }
+
+
+/* Typography */
+
+th {
+  font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
+  font-size: calc(0.8em + 1.3vw);
+}
+
+label {
+  font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
+  font-size: calc(0.9em + 0.9vw);
+}
+
+.actions {
+  font-size: calc(0.6em + 1.8vw);
+  font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+}
+
+a {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(1.9em + 1.9vw);
+}

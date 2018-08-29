@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<br>
+
+<h1>Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th id="name">Name</th>
+      <th id="image">Image url</th>
+      <!-- <th colspan="5"></th> -->
+    </tr>
+    <tr><br></tr>
+    <tr>
+      <th id="description">Description</th>
+      <!-- <th colspan="3"></th> -->
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= product.description %></td>
+        <td><%= product.image_url %></td>
+      </tr>
+      <tr>
+        <td class="links-products"><%= link_to 'Show', product %></td>
+        <td class="links-products"><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td class="links-products"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<br>
+
+<div id="new-products">
+  <%= link_to 'New Product', new_product_path %>
+</span>
+
+<!-- <%# paragraph_number = 1 %>
+<%# 5.times do %>
+  <p>This is paragraph number <%#= paragraph_number %></p>
+  <%# paragraph_number = paragraph_number + 1 %>
+<%# end %> -->

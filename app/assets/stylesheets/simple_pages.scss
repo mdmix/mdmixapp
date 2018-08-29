@@ -6,12 +6,13 @@ body {
   background-color: #FFE5CC;
 }
 
-* {
-  margin: 0;
-}
+// * {
+//   margin: 0;
+// }
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 .page-wrap {
@@ -27,11 +28,6 @@ html, body {
   display: block;
 }
 
-.head-on {
-  width: 75%;
-  margin: 0 auto;
-}
-
 #navbar {
   z-index: 999;
   width: 100%;
@@ -39,6 +35,11 @@ html, body {
   padding-left: 0px;
   padding-right: 0px;
   // padding-bottom: 9px;
+}
+
+.head-on {
+  width: 75%;
+  margin: 0 auto;
 }
 
 h1, h2, p, footer {
@@ -179,6 +180,12 @@ h1, h2, p, footer {
   padding-top: 43px;
 }
 
+h1, p {
+  line-height: 1.3em;
+  width: 89%;
+  margin: 0 auto;
+}
+
 footer, .page-wrap:after {
   height: 2.5em;
 }
@@ -186,9 +193,13 @@ footer, .page-wrap:after {
 footer {
   background: orange;
   display: table;
-  width: 100%;
+  z-index: 999;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  width: 100%;
+  position: absolute;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 footer span {
@@ -218,13 +229,13 @@ p {
 }
 
 .mdmix>a {
-  font-size: calc(1.1em + 2vw);
+  font-size: calc(0.6em + 2.3vw);
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
 .nav a, #dropdownMenu1 {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
-  font-size: calc(2.3em + 1.6vw);
+  font-size: calc(1.9em + 1.3vw);
 }
 
 footer {
@@ -239,4 +250,43 @@ footer {
   .anchor {
     padding-top: 63px;
   }
+}
+
+/* code-combination to change nabvar breakpoint */
+@media (max-width: 1023px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
 }
