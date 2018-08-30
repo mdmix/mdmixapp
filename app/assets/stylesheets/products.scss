@@ -8,8 +8,11 @@
 // }
 
 table {
-  width: 89%;
+  width: 90%;
   margin: 0 auto;
+  text-align: center;
+  // table-layout: fixed;
+  // line-height: 1.3vw;
 }
 
 form {
@@ -17,10 +20,12 @@ form {
 }
 
 .links-products {
-  padding-left: 0px;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  display: inline-block;
 }
 
-.links-show, .links-edit {
+.links-show {
   padding-left: 3.9vw;
   padding-right: 3.9vw;
 }
@@ -30,23 +35,35 @@ form {
   padding-right: 2.6vw;
 }
 
-// tr {
-//   display: inline-block;
-// }
-
-// #name {
-//   display: inline;
-//   width: 33%;
-// }
-//
-// #image {
-//   display: inline;
-//   width: 66%;
-// }
-
-#description {
-  line-height: 300%;
+.table-row {
+  line-height: 2vw;
+  padding-left: 0px;
+  padding-right: 0px;
+  // overflow: hidden;
 }
+
+#name, #description, #image {
+  width: 16.6%;
+  // margin: 0 auto;
+  // min-width: 1%;
+  text-align: center;
+  // display: table-cell;
+}
+
+// .product-table {
+//   // width: 1%;
+//   display: table-cell;
+//   text-align: center;
+//   // display: table-cell;
+// }
+
+// .links-products {
+//   display: inline;
+  // display: hidden;
+  // text-overflow: ellipsis;
+  // width: 25%;
+  // text-align: center;
+// }
 
 #new-products {
   width: 90%;
@@ -87,14 +104,20 @@ label {
   background-color: #F77E14;
 }
 
+#edit-h, #new-h {
+  margin-right: 0;
+  margin-left: 0;
+  width: 73%;
+}
+
 input, textarea {
-  width: 50%;
+  width: 73%;
   line-height: 1.9em;
 }
 
 #new-products>a {
-  margin-left: 2.3vw;
-  margin-right: 2.3vw;
+  // margin-left: 2.3vw;
+  margin-right: 0.5vw;
 }
 
 // .actions:focus {
@@ -111,7 +134,12 @@ input, textarea {
 
 th {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
-  font-size: calc(0.8em + 1.3vw);
+  font-size: calc(0.8em + 1.1vw);
+}
+
+.product-table {
+  font-family: 'Cousine', Arial Black, Impact, sans-serif;
+  font-size: calc(0.6em + 1.3vw);
 }
 
 label {
@@ -124,7 +152,12 @@ label {
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
+.links-products>a {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(0.9em + 1.6vw);
+}
+
 a {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
-  font-size: calc(1.9em + 1.9vw);
+  font-size: calc(1.6em + 1.9vw);
 }
