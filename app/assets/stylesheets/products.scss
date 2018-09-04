@@ -7,11 +7,21 @@
 //     outline: 1px solid red;
 // }
 
+.products-display {
+  text-align: center;
+}
+
+.products-pix {
+  text-align: center;
+  width: 39%;
+  margin: 0 auto;
+}
+
 table {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  // table-layout: fixed;
+  table-layout: fixed;
   // line-height: 1.3vw;
 }
 
@@ -23,6 +33,11 @@ form {
   padding-left: 0.5vw;
   padding-right: 0.5vw;
   display: inline-block;
+  // text-align: center;
+}
+
+.links-products>a {
+  float: left;
 }
 
 .links-show {
@@ -35,35 +50,60 @@ form {
   padding-right: 2.6vw;
 }
 
+h3 {
+  color: #ff0;
+}
+
 .table-row {
   line-height: 2vw;
-  padding-left: 0px;
-  padding-right: 0px;
+  // padding-left: 0px;
+  // padding-right: 0px;
   // overflow: hidden;
 }
 
-#name, #description, #image {
-  width: 16.6%;
+.products-details {
+  width: 93%;
+}
+
+// .products-display {
+//   height: 25vw;
+//   // overflow: fit-content;
+//   min-height: fit-content;
+// }
+
+.products-background {
+  // height: 25vw;
+  width: 76%;
+  margin: 6vw auto;
+  // background-image: url("turquoise.png");
+  background-color: #5AD4C2;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: calc(16em + 29vw);
+}
+
+#name, #description, #image, .product-table {
+  width: 23%;
+  // height: 10%;
   // margin: 0 auto;
   // min-width: 1%;
   text-align: center;
   // display: table-cell;
+  word-wrap: break-word;
+  // overflow: hidden;
 }
 
-// .product-table {
-//   // width: 1%;
-//   display: table-cell;
-//   text-align: center;
-//   // display: table-cell;
-// }
-
-// .links-products {
-//   display: inline;
-  // display: hidden;
-  // text-overflow: ellipsis;
-  // width: 25%;
+#colour {
+  width: 15%;
+  color: #ff0;
+  // height: 10%;
+  // margin: 0 auto;
+  // min-width: 1%;
   // text-align: center;
-// }
+  // display: table-cell;
+  // word-wrap: break-word;
+  // overflow: hidden;
+}
 
 #new-products {
   width: 90%;
@@ -134,12 +174,12 @@ input, textarea {
 
 th {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
-  font-size: calc(0.8em + 1.1vw);
+  font-size: calc(0.6em + 1.1vw);
 }
 
-.product-table {
+.product-table, .newly-created {
   font-family: 'Cousine', Arial Black, Impact, sans-serif;
-  font-size: calc(0.6em + 1.3vw);
+  font-size: calc(0.6em + 0.6vw);
 }
 
 label {
@@ -152,12 +192,38 @@ label {
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
-.links-products>a {
+h3 {
+  font-size: calc(0.4em + 0.8vw);
+  font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+  font-weight: bolder;
+}
+
+.products-details {
+  font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
+  font-size: calc(0.6em + 0.9vw);
+}
+
+.links-products>a, .links-show {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
-  font-size: calc(0.9em + 1.6vw);
+  font-size: calc(0.9em + 1.3vw);
 }
 
 a {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.6em + 1.9vw);
 }
+
+
+// /* MEDIA QUERIES */
+//
+// @media (min-width: 1440px) {
+//   #final-link>a {
+//   padding-left: 0.3vw;
+//   }
+// }
+//
+// @media (min-width: 1670px) {
+//   #final-link>a {
+//     padding-left: 0.5vw;
+//   }
+// }
