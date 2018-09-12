@@ -1,0 +1,8 @@
+    <div class="item<%= " active" if product == @products.first %>">
+      <span><%= image_tag(product.image_url, class: "left-pic") %>
+      <%= image_tag(product.image_url, class: "center-pic") %>
+      <%= image_tag(product.image_url, class: "right-pic") %></span>
+      <div class="carousel-caption">
+        <%= product.name %>
+      </div>
+    </div>

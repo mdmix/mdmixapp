@@ -1,0 +1,19 @@
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 products-display">
+    <div class="products-background">
+      <br></br>
+      <%= image_tag(product.image_url, class: "img-responsive products-pix") unless product.image_url.nil? %>
+      <a href="#"><h3><%= product.name %></h3></a>
+      <p class="products-details"><%= product.description %></p>
+      <p class="products-details" id="colour"><%= product.colour %></p>
+      <strong><p class="products-details">€<%= product.price %></p></strong>
+      <br>
+      <span class="links-products"><%= link_to 'Show', product %></span>
+      <span class="links-products"><%= link_to 'Edit', edit_product_path(product) %></span>
+      <span class="links-products"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+      <br></br>
+      <br></br>
+      <br></br>
+    </div><!-- end products-background -->
+  </div><!-- /col -->
+  <!-- <br>
+  <br> -->

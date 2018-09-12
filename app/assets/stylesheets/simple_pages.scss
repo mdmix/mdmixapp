@@ -15,6 +15,48 @@ html, body {
   margin: 0;
 }
 
+.center-pic {
+  width: 50%;
+}
+
+.right-pic, .left-pic {
+  display: none;
+}
+
+.glyphicon-chevron-left:before, .glyphicon-chevron-right:before {
+  color: #F77E14;
+}
+
+.carousel-indicators .active {
+  background-color: #F77E14;
+}
+
+.carousel-indicators li {
+  border: 1px solid #F77E14;
+}
+
+.carousel-caption {
+  color: #ff0;
+  position: relative;
+  transform: translateY(-233%);
+  // height: 50%;
+  text-align: center;
+  right: 0;
+  left: 0;
+}
+
+// .carousel-inner>.item>.center-pic {
+//   margin: 0 auto;
+//   width: 22%;
+//   display: inline;
+// }
+
+.carousel-inner>.item, .carousel-inner {
+  text-align: center;
+  background-color: #5AD4C2;
+  height: 79vw;
+}
+
 .page-wrap {
   min-height: 100%;
   height: auto;
@@ -238,6 +280,11 @@ p {
   font-size: calc(1.9em + 1.3vw);
 }
 
+.carousel-caption {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(1.9em + 3.6vw);
+}
+
 footer {
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
   font-size: 1.3em;
@@ -246,9 +293,41 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 375px) {
+  .carousel-caption {
+    transform: translateY(-256%);
+  }
+}
+
+@media (min-width: 425px) {
+  .carousel-caption {
+    transform: translateY(-293%);
+  }
+}
+
 @media (min-width: 768px) {
   .anchor {
     padding-top: 63px;
+  }
+  .lb {
+    display: none;
+  }
+  .center-pic, .right-pic, .left-pic {
+    width: 26%;
+    transform: translateY(19%);
+  }
+  .center-pic {
+    filter: invert(93%);
+    -webkit-filter: invert(93%);
+  }
+  .right-pic, .left-pic {
+    display: inline;
+  }
+  .carousel-inner {
+    height: 49vw;
+  }
+  .carousel-caption {
+    transform: translateY(-163%);
   }
 }
 
@@ -289,4 +368,22 @@ footer {
     .collapsing {
         overflow: hidden!important;
     }
+}
+
+@media (min-width: 1024px) {
+  .carousel-caption {
+    transform: translateY(-209%);
+  }
+}
+
+@media (min-width: 1440px) {
+  .carousel-caption {
+    transform: translateY(-299%);
+  }
+}
+
+@media (min-width: 1670px) {
+  .carousel-caption {
+    transform: translateY(-343%);
+  }
 }
