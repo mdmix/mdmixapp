@@ -45,12 +45,6 @@ html, body {
   left: 0;
 }
 
-// .carousel-inner>.item>.center-pic {
-//   margin: 0 auto;
-//   width: 22%;
-//   display: inline;
-// }
-
 .carousel-inner>.item, .carousel-inner {
   text-align: center;
   background-color: #5AD4C2;
@@ -332,7 +326,7 @@ footer {
 }
 
 /* code-combination to change nabvar breakpoint */
-@media (max-width: 1023px) {
+@media (max-width: 1435px) {
     .navbar-header {
         float: none;
     }
@@ -374,16 +368,25 @@ footer {
   .carousel-caption {
     transform: translateY(-209%);
   }
+  .orders-details {
+    height: 40vh;
+  }
 }
 
 @media (min-width: 1440px) {
   .carousel-caption {
     transform: translateY(-299%);
   }
+  .orders-details {
+    height: 51.5vh;
+  }
 }
 
-@media (min-width: 1670px) {
+@media (min-width: 1669px) {
   .carousel-caption {
     transform: translateY(-343%);
+  }
+  .orders-details {
+    height: 52.5vh;
   }
 }

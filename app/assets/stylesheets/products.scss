@@ -142,10 +142,54 @@ h4 {
   margin: 0 auto;
 }
 
+.orders-overview {
+  display: inline;
+}
+
+.orders-index {
+  text-align: center;
+}
+
+.orders-details {
+  background-color: #ff0;
+  width: 73%;
+  margin: 0 auto;
+  padding-top: 0.3vh;
+}
+
+.orders-numbers, .orders-names:visited {
+  color: #5AD4C2;
+}
+
+.orders-names, #orders-prices {
+  color: #F77E14;
+}
+
+.order-header {
+  color: black;
+}
+
+.order-info, .order-field, .field-input {
+  color: #ff0;
+}
+
+hr {
+  width: 59%;
+  border-width: 0.6vw;
+  border-color: #F77E14;
+  padding-bottom: 0.9vh;
+}
+
+.order-info-background {
+  background-color: #F77E14;
+  width: 89%;
+  margin: 0 auto;
+}
+
 
 /* Typography */
 
-th {
+th, #orders-descriptions, #orders-prices {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
   font-size: calc(0.6em + 1.1vw);
 }
@@ -155,13 +199,18 @@ th {
   font-size: calc(0.6em + 0.6vw);
 }
 
-label {
+label, .order-header {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
   font-size: calc(0.9em + 0.9vw);
 }
 
-.actions, h4 {
+.actions, h4, .orders-numbers, .order-info-title, .field-input {
   font-size: calc(0.6em + 1.8vw);
+  font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+}
+
+.field-input {
+  font-size: calc(0.9em + 1.9vw);
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
@@ -179,6 +228,11 @@ h3 {
 .links-products>a, .links-show {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(0.9em + 1.3vw);
+}
+
+.orders-names {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(1.1em + 1.9vw);
 }
 
 a {

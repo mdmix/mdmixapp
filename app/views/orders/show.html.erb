@@ -1,0 +1,12 @@
+<br>
+<br>
+
+<div class="container order-info-title">
+  <section class="order-info-background">
+    <h2 class="order-info">Order Information</h2>
+    <p class="order-field"><strong class="order-header">Order ID:<br> </strong><span class="field-input"><%= @order.id %></span></p>
+    <p class="order-field"><strong class="order-header">Product Name:<br> </strong><span class="field-input"><%= @order.product.name %></span></p>
+    <p class="order-field"><strong class="order-header">Product Price:<br> </strong><span class="field-input"><%= number_to_currency(@order.product.price/1.to_f) %></span></p>
+    <p class="order-field"><strong class="order-header">Total Price:<br> </strong><span class="field-input"><%= number_to_currency(@order.total/1.to_f) %></span></p>
+  </section>
+</div>
