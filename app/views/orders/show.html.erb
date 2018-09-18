@@ -1,9 +1,9 @@
 <br>
 <br>
 
-<div class="container order-info-title">
+<div class="container order-info">
   <section class="order-info-background">
-    <h2 class="order-info">Order Information</h2>
+    <h2 class="order-info-title">Order Information</h2>
     <p class="order-field"><strong class="order-header">Order ID:<br> </strong><span class="field-input"><%= @order.id %></span></p>
     <p class="order-field"><strong class="order-header">Product Name:<br> </strong><span class="field-input"><%= @order.product.name %></span></p>
     <p class="order-field"><strong class="order-header">Product Price:<br> </strong><span class="field-input"><%= number_to_currency(@order.product.price/1.to_f) %></span></p>

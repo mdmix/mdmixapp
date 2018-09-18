@@ -1,18 +1,26 @@
+<br>
 <p id="notice"><%= notice %></p>
 
 <br>
 
-<h1>Products</h1>
+<h1>Salutations from The Mixer</h1>
 
+<h2>Your hub for all kinds of creative mixes</h2>
+<br class="titles-spread">
+<br class="titles-spread">
+<br class="titles-spread">
 <br>
 <br>
-<br>
-
+<hr>
 <div id="new-products">
   <%= link_to 'New Product', new_product_path %>
 </div>
+<hr>
+<br>
+<br>
+<h5>All Products</h5>
 
-<div class="container-fluid">
+<div class="container-fluid products-overview">
   <div class="row products-row">
     <%= render @products %>
   </div>

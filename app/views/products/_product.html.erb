@@ -2,7 +2,8 @@
     <div class="products-background">
       <br></br>
       <%= image_tag(product.image_url, class: "img-responsive products-pix") unless product.image_url.nil? %>
-      <a href="#"><h3><%= product.name %></h3></a>
+      <h3><%= link_to "#{product.name}", product, id: "product-title" %></h3>
+      <!-- <a href="#"><h3><%= product.name %></h3></a> -->
       <p class="products-details"><%= product.description %></p>
       <p class="products-details" id="colour"><%= product.colour %></p>
       <strong><p class="products-details">€<%= product.price %></p></strong>

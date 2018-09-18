@@ -7,8 +7,36 @@
 //     outline: 1px solid red;
 // }
 
-.products-display {
+.products-display, h5, .links-combo {
   text-align: center;
+}
+
+h5 {
+  position: relative;
+  bottom: 3vh;
+}
+
+.products-overview {
+  bottom: 5vh;
+  position: relative;
+}
+
+.titles-spread {
+  display: none;
+}
+
+.newly-created {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.product-input {
+  top: 2vh;
+  position: relative;
+  // text-shadow: 0.9px 0.9px 1.6px #000;
+  // text-shadow: -4.9px -0.6px 0.6px #000;
+  font-weight: bolder;
+  color: #5AD4C2;
 }
 
 .products-pix {
@@ -50,7 +78,7 @@ form {
   padding-right: 2.6vw;
 }
 
-h3 {
+h3, #product-title, #caption {
   color: #ff0;
 }
 
@@ -75,7 +103,7 @@ h3 {
 }
 
 #colour {
-  width: 15%;
+  width: 83%;
   color: #ff0;
 }
 
@@ -107,7 +135,7 @@ label {
   text-align: center;
 }
 
-.actions input:hover {
+.actions input:hover, h5, .product-header {
   color: #F77E14;
 }
 
@@ -146,10 +174,6 @@ h4 {
   display: inline;
 }
 
-.orders-index {
-  text-align: center;
-}
-
 .orders-details {
   background-color: #ff0;
   width: 73%;
@@ -169,7 +193,7 @@ h4 {
   color: black;
 }
 
-.order-info, .order-field, .field-input {
+.order-info-title, .order-field, .field-input {
   color: #ff0;
 }
 
@@ -178,6 +202,12 @@ hr {
   border-width: 0.6vw;
   border-color: #F77E14;
   padding-bottom: 0.9vh;
+}
+
+.product-info-background {
+  background-color: #ff0;
+  width: 63%;
+  margin: 0 auto;
 }
 
 .order-info-background {
@@ -194,7 +224,7 @@ th, #orders-descriptions, #orders-prices {
   font-size: calc(0.6em + 1.1vw);
 }
 
-.product-table, .newly-created {
+.product-table {
   font-family: 'Cousine', Arial Black, Impact, sans-serif;
   font-size: calc(0.6em + 0.6vw);
 }
@@ -204,12 +234,12 @@ label, .order-header {
   font-size: calc(0.9em + 0.9vw);
 }
 
-.actions, h4, .orders-numbers, .order-info-title, .field-input {
+.newly-created, .actions, h4, .orders-numbers, .order-info, .field-input, #product-title {
   font-size: calc(0.6em + 1.8vw);
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
-.field-input {
+.field-input, h5, .product-input {
   font-size: calc(0.9em + 1.9vw);
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
@@ -225,14 +255,24 @@ h3 {
   font-size: calc(0.6em + 0.9vw);
 }
 
-.links-products>a, .links-show {
+.links-products>a, .links-show, .product-header {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
-  font-size: calc(0.9em + 1.3vw);
+  font-size: calc(1.1em + 1.9vw);
+}
+
+.product-header {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(1.3em + 1.9vw);
 }
 
 .orders-names {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.1em + 1.9vw);
+}
+
+#new-products>a {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(1.9em + 3.9vw);
 }
 
 a {

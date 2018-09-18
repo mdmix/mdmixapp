@@ -38,7 +38,7 @@ html, body {
 .carousel-caption {
   color: #ff0;
   position: relative;
-  transform: translateY(-233%);
+  transform: translateY(-193%);
   // height: 50%;
   text-align: center;
   right: 0;
@@ -274,7 +274,7 @@ p {
   font-size: calc(1.9em + 1.3vw);
 }
 
-.carousel-caption {
+#caption {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.9em + 3.6vw);
 }
@@ -289,19 +289,23 @@ footer {
 
 @media (min-width: 375px) {
   .carousel-caption {
-    transform: translateY(-256%);
+    transform: translateY(-223%);
   }
 }
 
 @media (min-width: 425px) {
   .carousel-caption {
-    transform: translateY(-293%);
+    transform: translateY(-249%);
   }
 }
 
 @media (min-width: 768px) {
   .anchor {
     padding-top: 63px;
+  }
+  h5 {
+    position: relative;
+    bottom: 0;
   }
   .lb {
     display: none;
@@ -321,7 +325,7 @@ footer {
     height: 49vw;
   }
   .carousel-caption {
-    transform: translateY(-163%);
+    transform: translateY(-125%);
   }
 }
 
@@ -365,8 +369,12 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  h5 {
+    position: relative;
+    top: 2vh;
+  }
   .carousel-caption {
-    transform: translateY(-209%);
+    transform: translateY(-159%);
   }
   .orders-details {
     height: 40vh;
@@ -375,16 +383,27 @@ footer {
 
 @media (min-width: 1440px) {
   .carousel-caption {
-    transform: translateY(-299%);
+    transform: translateY(-209%);
   }
   .orders-details {
     height: 51.5vh;
   }
+  h5 {
+    position: relative;
+    top: 5vh;
+  }
+  .titles-spread {
+    display: inline;
+  }
 }
 
 @media (min-width: 1669px) {
+  h5 {
+    position: relative;
+    top: 3vh;
+  }
   .carousel-caption {
-    transform: translateY(-343%);
+    transform: translateY(-233%);
   }
   .orders-details {
     height: 52.5vh;
