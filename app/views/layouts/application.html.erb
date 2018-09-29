@@ -38,6 +38,13 @@
           <div class="mdmix navbar-brand">
             <%= link_to "Home", root_path %>
           </div><!--end mdmix -->
+          <%= form_with(url: products_path, method: 'get', local: true, id:"search-form") do |form| %>
+            <div id="form-shape">
+              <%= form.label :q, 'Search for:', id:"search-label" %>
+              <%= form.text_field :q, id: 'q', value: params[:q], class:"search-input" %>
+              <%= form.submit 'Search', id:"search-submit" %>
+            </div>
+          <% end %>
         </div><!-- navbar header -->
         <div class="navbar-collapse collapse nav-box" id="nav-box">
           <ul class="nav navbar-nav navbar-right">
@@ -47,6 +54,13 @@
             <li><%= link_to "Orders", orders_path %></li>
           </ul>
         </div><!-- end nav -->
+        <%= form_with(url: products_path, method: 'get', local: true, id:"search-form-wide") do |form| %>
+          <div id="form-shape">
+            <%= form.label :q, 'Search for:', id:"search-label" %>
+            <%= form.text_field :q, id: 'q', value: params[:q], class:"search-input" %>
+            <%= form.submit 'Search', id:"search-submit" %>
+          </div>
+        <% end %>
       </div><!-- end nav container -->
     </nav><!-- end navbar-->
     <div class="anchor">

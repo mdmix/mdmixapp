@@ -7,6 +7,7 @@
 //     outline: 1px solid red;
 // }
 
+
 .products-display, h5, .links-combo {
   text-align: center;
 }
@@ -55,6 +56,31 @@ table {
 
 form {
   margin-left: 2.3vw;
+}
+
+#search-label {
+  display: block;
+  width: fit-content;
+  text-align: center;
+}
+
+#search-form {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+#search-form-wide {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  display: none;
+}
+
+#form-shape {
+  text-align: left;
+  width: 89%;
+  margin: 0 auto;
 }
 
 .links-products {
@@ -127,6 +153,8 @@ h3, #product-title, #caption {
 
 label {
   line-height: 1.3em;
+  top: 0.4em;
+  position: relative;
 }
 
 .actions input {
@@ -229,15 +257,21 @@ th, #orders-descriptions, #orders-prices {
   font-size: calc(0.6em + 0.6vw);
 }
 
-label, .order-header {
+.order-header {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
-  font-size: calc(0.9em + 0.9vw);
+  font-size: calc(0.7em + 0.9vw);
 }
 
 .newly-created, .actions, h4, .orders-numbers, .order-info, .field-input, #product-title {
   font-size: calc(0.6em + 1.8vw);
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
+
+#search-submit, label {
+font-size: calc(0.4em + 0.9vw);
+font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+}
+
 
 .field-input, h5, .product-input {
   font-size: calc(0.9em + 1.9vw);

@@ -73,6 +73,20 @@ html, body {
   // padding-bottom: 9px;
 }
 
+.search-input {
+  width: 69%;
+  // float: right;
+}
+
+#search-submit {
+  // float: right;
+  width: fit-content;
+  background-color: #ff0;
+  padding: 0.1em;
+  // margin-right: 1.16vw;
+  // padding-bottom: 0;
+}
+
 .head-on {
   width: 75%;
   margin: 0 auto;
@@ -111,6 +125,7 @@ h1, h2, p, footer {
 #navbar li a:link, #nav-box .button:link, #navbar li a:visited {
   color: #ff0;
   text-decoration-line: none;
+  bottom: 1vh;
 }
 
 #navbar li a:active, #navbar li a:visited {
@@ -133,6 +148,10 @@ h1, h2, p, footer {
 #nav-box>ul {
   position: relative;
   transform: translateY(13%);
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar-inverse {
+  border-color: #ff0;
 }
 
 // .navbar-inverse .navbar-nav>.active>a:visited, .navbar-inverse .dropdown-menu>.active>a:visited, .navbar-inverse .navbar-nav>.active>#dropdown:visited {
@@ -190,8 +209,8 @@ h1, h2, p, footer {
   letter-spacing: 0.25em;
   transition: 2s;
   -webkit-transition: 2s;/* Safari */
+  // bottom: 4.2vh;
 }
-
 .navbar-collapse {
   padding-bottom: 39px;
   padding-top: -20px;
@@ -207,6 +226,11 @@ h1, h2, p, footer {
 .navbar .navbar-toggle:focus {
   background-color: #F77E14;
   border-color: #F77E14;
+}
+
+.navbar-inverse .navbar-colapse, .navbar-inverse .navbar-form {
+  border-color: #ff0;
+  border-top: 1px solid #ff0;
 }
 
 
@@ -299,7 +323,16 @@ footer {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1435px) {
+  .mdmix>a {
+    top: 1.3vh;
+  }
+}
+
 @media (min-width: 768px) {
+  #navbar li a:link, #nav-box .button:link, #navbar li a:visited {
+    bottom: 4.3vh;
+  }
   .anchor {
     padding-top: 63px;
   }
@@ -382,6 +415,24 @@ footer {
 }
 
 @media (min-width: 1440px) {
+  #navbar li a:link, #nav-box .button:link, #navbar li a:visited {
+    bottom: 0;
+  }
+  #search-form {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  #search-form-wide {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  .anchor {
+    padding-top: 19vh;
+  }
   .carousel-caption {
     transform: translateY(-209%);
   }
