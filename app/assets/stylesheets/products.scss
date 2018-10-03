@@ -54,8 +54,23 @@ table {
   // line-height: 1.3vw;
 }
 
-form {
-  margin-left: 2.3vw;
+// #contact-form {
+//   margin-left: 16.3vw;
+//   margin: 0 auto;
+//   width: 73%;
+// }
+
+#contact-name {
+  width: 73%;
+}
+
+.form-control, .contact-label {
+  width: 73%;
+  margin: 0 auto;
+}
+
+.contact-label {
+  top: 0.4vh;
 }
 
 #search-label {
@@ -267,7 +282,7 @@ th, #orders-descriptions, #orders-prices {
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
-#search-submit, label {
+#search-submit, label, .form_label {
 font-size: calc(0.4em + 0.9vw);
 font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
