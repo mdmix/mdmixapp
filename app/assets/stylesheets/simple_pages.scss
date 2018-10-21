@@ -15,6 +15,21 @@ html, body {
   margin: 0;
 }
 
+.user-porthole {
+  // list-style-position: inside;
+  list-style-type: none;
+  // clear: both;
+  float: right;
+  display: block;
+  padding-top: 4vh;
+  padding-right: 1vw;
+  color: #F77E14;
+}
+
+#user-porthole>li>a:link {
+  color: #F77E14;
+}
+
 .center-pic {
   width: 50%;
 }
@@ -139,6 +154,12 @@ h1, h2, p, footer {
   text-decoration-line: none;
   bottom: 1vh;
 }
+
+// #navbar li #user-access:link, #nav-box .button:link, #navbar li #user-access:visited {
+//   color: orange;
+//   text-decoration-line: none;
+//   bottom: 1vh;
+// }
 
 #navbar li a:active, #navbar li a:visited {
   color: #ff0;
@@ -282,6 +303,13 @@ footer span {
 
 /* Typography */
 
+.user-access {
+  font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
+  font-size: calc(0.6em + 1.1vw);
+// -webkit-margin-before: 0;/* Safari */
+  // text-align: left;
+}
+
 h1 {
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
   color: #F77E14;
@@ -324,12 +352,26 @@ footer {
 /* MEDIA QUERIES */
 
 @media (min-width: 375px) {
+  #search-form {
+    width: 103%;
+    padding-right: 0;
+  }
   .carousel-caption {
     transform: translateY(-223%);
   }
 }
 
+@media (min-width: 425px) and (max-width: 767px) {
+  #form-shape {
+    width: 96%;
+    margin-right: 0vw;
+  }
+}
+
 @media (min-width: 425px) {
+  // .user-porthole {
+  //   padding-top: 4vh;
+  // }
   .carousel-caption {
     transform: translateY(-249%);
   }
@@ -342,6 +384,20 @@ footer {
 }
 
 @media (min-width: 768px) {
+  // .user-porthole {
+  //   padding-top: 4vh;
+  // }
+  .label-min-password {
+    top: 1.6em;
+  }
+  #min-password {
+    top: 0.9em;
+    position: relative;
+  }
+  #form-shape {
+    width: 69%;
+    margin-right: 8vw;
+  }
   #navbar li a:link, #nav-box .button:link, #navbar li a:visited {
     bottom: 4.3vh;
   }
@@ -427,6 +483,20 @@ footer {
 }
 
 @media (min-width: 1440px) {
+  .label-min-password {
+    top: 0.9em;
+  }
+  #min-password {
+    top: 0.7em;
+    position: relative;
+  }
+  .user-porthole {
+    position: absolute;
+    padding-top: 15vh;
+  }
+  #form-shape {
+    margin-left: 32.5vw;
+  }
   #navbar li a:link, #nav-box .button:link, #navbar li a:visited {
     bottom: 0;
   }
@@ -461,6 +531,12 @@ footer {
 }
 
 @media (min-width: 1669px) {
+  .user-porthole {
+    padding-top: 7em;
+  }
+  #form-shape {
+    margin-left: 37.5vw;
+  }
   h5 {
     position: relative;
     top: 3vh;

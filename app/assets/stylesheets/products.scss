@@ -60,17 +60,38 @@ table {
 //   width: 73%;
 // }
 
+.label-email, .label-password {
+  top: 3.3vh;
+}
+
+.label-min-password {
+  top: 2.9em;
+}
+
+#min-password {
+  top: 1.6em;
+  position: relative;
+}
+
 #contact-name {
   width: 73%;
 }
 
-.form-control, .contact-label {
+.form-control, .contact-label, #sign-up, #log-in, #forgot-password, .access-click {
   width: 73%;
   margin: 0 auto;
 }
 
+.user-email, .user-password {
+  width: 100%;
+}
+
 .contact-label {
   top: 0.4vh;
+}
+
+.check-box {
+  width: fit-content;
 }
 
 #search-label {
@@ -83,12 +104,12 @@ table {
   text-align: center;
   width: 100%;
   margin: 0;
+  padding-right: 4vw;
 }
 
 #search-form-wide {
   text-align: center;
   width: 100%;
-  margin: 0;
   display: none;
 }
 
@@ -200,6 +221,10 @@ input, textarea {
   line-height: 1.9em;
 }
 
+.reset {
+  width: 100%;
+}
+
 #new-products>a {
   // margin-left: 2.3vw;
   margin-right: 0.5vw;
@@ -247,6 +272,16 @@ hr {
   padding-bottom: 0.9vh;
 }
 
+.form-line {
+  width: 73%;
+  margin-left: 0;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  border-width: 0.9vh;
+  border-color: #5AD4C2;
+  padding-bottom: 0.3vh;
+}
+
 .product-info-background {
   background-color: #ff0;
   width: 63%;
@@ -282,7 +317,7 @@ th, #orders-descriptions, #orders-prices {
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
-#search-submit, label, .form_label {
+#search-submit, label, .form_label, .reset {
 font-size: calc(0.4em + 0.9vw);
 font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
@@ -302,6 +337,11 @@ h3 {
 .products-details {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
   font-size: calc(0.6em + 0.9vw);
+}
+
+#min-password {
+  font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
+  font-size: calc(0.4em + 0.9vw);
 }
 
 .links-products>a, .links-show, .product-header {
