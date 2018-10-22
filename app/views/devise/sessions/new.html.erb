@@ -1,7 +1,6 @@
 <h2>Log in</h2>
 
-<form id="log-in">
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, html: {id: "log-in"}, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email, class: "label-email" %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "user-email" %>
@@ -23,7 +22,6 @@
     <%= f.submit "Log in" %>
   </div>
 <% end %>
-</form><!-- end log-in -->
 
 <div class="access-click">
   <%= render "devise/shared/links" %>
