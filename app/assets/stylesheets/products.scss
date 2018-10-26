@@ -46,6 +46,15 @@ h5 {
   margin: 0 auto;
 }
 
+.email-column, .link-table {
+  text-align: center;
+}
+
+.link-table {
+  position: relative;
+  top: 3em;
+}
+
 table {
   width: 90%;
   margin: 0 auto;
@@ -77,12 +86,31 @@ table {
   width: 73%;
 }
 
-.form-control, .contact-label, #sign-up, #log-in, #new_user, .access-click {
+.form-control, .contact-label, #sign-up, #log-in, #new_user, #edit_user, .access-click, .cancel-frame, #unhappy-frame, .link-frame {
   width: 73%;
   margin: 0 auto;
 }
 
-.user-email, .user-password {
+.cancel-text {
+  background-color: black;
+  color: white;
+}
+
+#contact-name, #unhappy-text {
+  width: 73%;
+}
+
+#unhappy-text {
+  text-align: center;
+  padding-top: 0.9em;
+  padding-bottom: 0.6em;
+}
+
+.link-frame {
+  padding-top: 1.6em;
+}
+
+.user-email, .user-password, #user_email, #user_password, #user_password_confirmation, #user_current_password {
   width: 100%;
 }
 
@@ -142,6 +170,15 @@ table {
 
 h3, #product-title, #caption {
   color: #ff0;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.users-row {
+  text-align: center;
 }
 
 .table-row {
@@ -246,7 +283,7 @@ h4 {
   background-color: #ff0;
   width: 73%;
   margin: 0 auto;
-  padding-top: 0.3vh;
+  padding-top: 0.2em;
 }
 
 .orders-numbers, .orders-names:visited {
@@ -297,7 +334,7 @@ hr {
 
 /* Typography */
 
-th, #orders-descriptions, #orders-prices {
+th, #orders-descriptions, #orders-prices, .cancel-text, #unhappy-text {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
   font-size: calc(0.6em + 1.1vw);
 }
@@ -368,3 +405,13 @@ a {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.6em + 1.9vw);
 }
+
+.links-users {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(1.7em + 2.7vw);
+}
+
+// .form-link {
+//   font-family: 'Monofett', Arial Black, Impact, sans-serif;
+//   font-size: calc(1.6em + 1.9vw);
+// }
