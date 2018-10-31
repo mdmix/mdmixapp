@@ -36,6 +36,14 @@
     <br>
     <span class="product-input">$<%= @product.price %></span>
   </p>
+
+  <p class="newly-created" id="ratings">
+    <strong class="product-header">Reviews – best/worst:</strong>
+    <br>
+    <%= @product.highest_rating_comment.rating %>
+    <br>
+    <%= @product.lowest_rating_comment.body %>
+  </p>
 </section>
 
 <br>
