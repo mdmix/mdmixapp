@@ -30,6 +30,11 @@ html, body {
   color: #F77E14;
 }
 
+.alert-warning {
+  background-color: #ff0;
+  color: #5AD4C2;
+}
+
 .center-pic {
   width: 50%;
 }
@@ -478,7 +483,7 @@ footer {
     transform: translateY(-159%);
   }
   .orders-details {
-    height: 40vh;
+    height: 20.5em;
   }
 }
 
@@ -519,7 +524,7 @@ footer {
     transform: translateY(-209%);
   }
   .orders-details {
-    height: 51.5vh;
+    height: 26em;
   }
   h5 {
     position: relative;
@@ -545,6 +550,6 @@ footer {
     transform: translateY(-233%);
   }
   .orders-details {
-    height: 52.5vh;
+    height: 29em;
   }
 }

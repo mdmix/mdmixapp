@@ -79,7 +79,13 @@
     </div>
     <br>
     <br>
-    <p class="alert"><%= alert %></p>
+    <% if alert %>
+      <p class="alert alert-warning"><%= alert %></p>
+    <% end %>
+
+    <% if notice %>
+      <p id="notice" class="alert alert-warning"><%= notice %></p>
+    <% end %>
 
     <%= yield %>
 
