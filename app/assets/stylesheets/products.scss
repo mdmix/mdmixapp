@@ -31,7 +31,7 @@ h5 {
   padding-bottom: 3vh;
 }
 
-#ratings {
+#reviews {
   width: 100%;
   background-color: #5AD4C2;
   color: #FFE5CC;
@@ -250,6 +250,10 @@ label {
   color: #F77E14;
 }
 
+#reviews-header {
+  color: #ff0;
+}
+
 .actions>input {
   // width: 100%;
   line-height: 1.9em;
@@ -364,11 +368,15 @@ th, #orders-descriptions, #orders-prices, .cancel-text, #unhappy-text {
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
+.reviews-text {
+  font-size: calc(0.8em + 1.7vw);
+  font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+}
+
 #search-submit, label, .form_label, .reset {
 font-size: calc(0.4em + 0.9vw);
 font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
-
 
 .field-input, h5, .product-input {
   font-size: calc(0.9em + 1.9vw);
@@ -381,6 +389,11 @@ h3 {
   font-weight: bolder;
 }
 
+#reviews-header {
+font-size: calc(0.6em + 1.3vw);
+font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+}
+
 .products-details {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
   font-size: calc(0.6em + 0.9vw);
@@ -391,7 +404,7 @@ h3 {
   font-size: calc(0.4em + 0.9vw);
 }
 
-.links-products>a, .links-show, .product-header {
+.links-products>a, .links-show {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.1em + 1.9vw);
 }
