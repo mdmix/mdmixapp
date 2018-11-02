@@ -31,13 +31,35 @@ h5 {
   padding-bottom: 3vh;
 }
 
-#reviews {
+#reviews, #ratings-range {
   width: 100%;
   background-color: #5AD4C2;
   color: #FFE5CC;
   padding-left: -30px;
   padding-right: -30px;
+  text-align: center;
+}
 
+#new_comment {
+  width: 63%;
+  margin: 0 auto;
+  background-color: #ff0;
+}
+
+#comment_body {
+  height: 6em;
+  line-height: 1.3em;
+}
+
+.product-reviews {
+  width: 63%;
+  margin: 0 auto;
+  background-color: #5AD4C2;
+  color: #FFE5CC;
+}
+
+#recorded-reviews {
+  width: 95%;
 }
 
 .product-input {
@@ -53,7 +75,7 @@ h5 {
   margin: 0 auto;
 }
 
-.email-column, .link-table {
+.email-column, .link-table, .rated, .rating {
   text-align: center;
 }
 
@@ -244,7 +266,7 @@ label {
   color: #ff0;
 }
 
-.actions>input {
+.actions>input, #submit-review {
   line-height: 1.9em;
   color: #ff0;
   background-color: #F77E14;
@@ -356,10 +378,10 @@ th, #orders-descriptions, #orders-prices, .cancel-text, #unhappy-text {
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
-.reviews-text {
-  font-size: calc(0.8em + 1.7vw);
-  font-family: 'Syncopate', Arial Black, Futura, sans-serif;
-}
+// .reviews-text {
+//   font-size: calc(0.8em + 1.7vw);
+//   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+// }
 
 #search-submit, label, .form_label, .reset {
 font-size: calc(0.4em + 0.9vw);
@@ -377,7 +399,7 @@ h3 {
   font-weight: bolder;
 }
 
-#reviews-header {
+#reviews-header, .reviews-text {
 font-size: calc(0.6em + 1.3vw);
 font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
@@ -387,7 +409,7 @@ font-family: 'Syncopate', Arial Black, Futura, sans-serif;
   font-size: calc(0.6em + 0.9vw);
 }
 
-#min-password {
+#min-password, #comment_body {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
   font-size: calc(0.4em + 0.9vw);
 }

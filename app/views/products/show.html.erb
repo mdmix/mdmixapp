@@ -36,23 +36,31 @@
     <br>
     <span class="product-input">$<%= @product.price %></span>
   </p>
-
+  <br>
   <p class="newly-created" id="reviews">
     <strong class="product-header" id="reviews-header">Reviews – range:</strong>
     <br>
-    <span class="reviews-text">
-      <b>
-      <i class="fas fa-user-secret"></i>
-      <%= @product.highest_rating_comment.rating %>
-      <%= @product.highest_rating_comment.body %>
+    <div id="ratings-range">
+      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
       <br>
-      <i class="fas fa-user-secret"></i>
-      <%= @product.lowest_rating_comment.rating %>
-      <%= @product.lowest_rating_comment.body %></b>
-    </span>
+        <span class="reviews-text">
+          <b>
+          <i class="fas fa-user-secret"></i>
+          <span>Highest<br>
+            <%= @product.highest_rating_comment %></span>
+          <br>
+          <i class="fas fa-user-secret"></i>
+          <span>Lowest<br>
+            <%= @product.lowest_rating_comment %><br></span></b>
+        </span>
+        <br>
+    </div>
   </p>
 </section>
 
+<br>
+<br>
+<br>
 <%= render 'new_comment' %>
 <%= render 'comments' %>
 
