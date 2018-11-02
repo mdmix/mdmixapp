@@ -37,15 +37,12 @@ h5 {
   color: #FFE5CC;
   padding-left: -30px;
   padding-right: -30px;
-  // width: 63%;
-  // margin: 0 auto;
+
 }
 
 .product-input {
   top: 2vh;
   position: relative;
-  // text-shadow: 0.9px 0.9px 1.6px #000;
-  // text-shadow: -4.9px -0.6px 0.6px #000;
   font-weight: bolder;
   color: #5AD4C2;
 }
@@ -70,14 +67,7 @@ table {
   margin: 0 auto;
   text-align: center;
   table-layout: fixed;
-  // line-height: 1.3vw;
 }
-
-// #contact-form {
-//   margin-left: 16.3vw;
-//   margin: 0 auto;
-//   width: 73%;
-// }
 
 .label-email, .label-password {
   top: 3.3vh;
@@ -255,7 +245,6 @@ label {
 }
 
 .actions>input {
-  // width: 100%;
   line-height: 1.9em;
   color: #ff0;
   background-color: #F77E14;
@@ -277,7 +266,6 @@ input, textarea {
 }
 
 #new-products>a {
-  // margin-left: 2.3vw;
   margin-right: 0.5vw;
 }
 
@@ -433,8 +421,3 @@ a {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.7em + 2.7vw);
 }
-
-// .form-link {
-//   font-family: 'Monofett', Arial Black, Impact, sans-serif;
-//   font-size: calc(1.6em + 1.9vw);
-// }

@@ -1,4 +1,3 @@
-<!-- <p id="notice"><%= notice %></p> -->
 
 <br>
 <br>
@@ -11,16 +10,11 @@
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 users-emails">
           <p><%= user.email %></p>
         </div>
-        <!-- <td><%#= user.last_name %></td> -->
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 users-show">
           <span><%= link_to 'Show', user, class: "users-changes" %></span>
-        <!-- </div> -->
-          <!-- <td class="col-lg-6 col-md-6 col-sm-12 col-xs-12 users-settings"> -->
-        <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 users-edit"> -->
+
           <span><%= link_to 'Edit', edit_user_path(user), class: "users-changes" %></span>
-        <!-- </div> -->
-          <!-- <td class="col-lg-6 col-md-6 col-sm-12 col-xs-12 users-settings"> -->
-        <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 users-rid"> -->
+
           <span><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, class: "users-changes" %></span>
         </div>
       </div>

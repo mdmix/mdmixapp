@@ -36,8 +36,6 @@
   </div>
 <% end %>
 
-<!-- <h3 id="cancel">Cancel my account</h3> -->
-
 <div id="unhappy-frame"><div id="unhappy-text">Unhappy?</div></div>
 
 <%= button_to("Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, form_class: "cancel-frame", class: "cancel-text") %>
