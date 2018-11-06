@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
-    @comment.save.paginate(page: params[:page], per_page: 5)
+    @comment.save
     # redirect_to product_path(@product)
 
     respond_to do |format|
