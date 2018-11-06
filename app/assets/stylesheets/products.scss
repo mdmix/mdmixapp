@@ -58,6 +58,12 @@ h5 {
   color: #FFE5CC;
 }
 
+.pages-frame {
+  width: 63%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 #recorded-reviews {
   width: 95%;
 }
@@ -108,9 +114,13 @@ table {
   width: 73%;
 }
 
-.form-control, .contact-label, #sign-up, #log-in, #new_user, #edit_user, .access-click, .cancel-frame, #unhappy-frame, .link-frame {
+.form-control, .contact-label, .product-label, #sign-up, #log-in, #new_user, #edit_user, .products-submit, .access-click, .cancel-frame, #unhappy-frame, .link-frame, .links-products-form, #error_explanation, .field_with_errors {
   width: 73%;
   margin: 0 auto;
+}
+
+#error_explanation {
+  margin-left: 13.5%;
 }
 
 .cancel-text {
@@ -136,8 +146,8 @@ table {
   width: 100%;
 }
 
-.contact-label {
-  top: 0.4vh;
+.contact-label, .product-label {
+  top: 0.1em;
 }
 
 .check-box {
@@ -185,10 +195,10 @@ table {
   padding-right: 3.9vw;
 }
 
-.links-edit, .links-new {
-  padding-left: 2.6vw;
-  padding-right: 2.6vw;
-}
+// .links-edit, .links-new {
+//   padding-left: 2.6vw;
+//   padding-right: 2.6vw;
+// }
 
 h3, #product-title, #caption {
   color: #ff0;
@@ -273,9 +283,8 @@ label {
 }
 
 #edit-h, #new-h {
-  margin-right: 0;
-  margin-left: 0;
-  width: 73%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 input, textarea {
@@ -434,7 +443,7 @@ font-family: 'Syncopate', Arial Black, Futura, sans-serif;
   font-size: calc(1.9em + 3.9vw);
 }
 
-a {
+a, .previous_page, .current {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.6em + 1.9vw);
 }
