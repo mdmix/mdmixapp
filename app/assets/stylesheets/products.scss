@@ -8,7 +8,7 @@
 // }
 
 
-.products-display, h5, .links-combo {
+.products-display, h5, .links-combo, #rid-frame, .email-column, .link-table, .rated, .rating, .users-row {
   text-align: center;
 }
 
@@ -68,6 +68,11 @@ h5 {
   width: 95%;
 }
 
+#rid-reviews {
+  top: 0.3em;
+  position: relative;
+}
+
 .product-input {
   top: 2vh;
   position: relative;
@@ -79,10 +84,6 @@ h5 {
   text-align: center;
   width: 39%;
   margin: 0 auto;
-}
-
-.email-column, .link-table, .rated, .rating {
-  text-align: center;
 }
 
 .link-table {
@@ -207,10 +208,6 @@ h3, #product-title, #caption {
 .row {
   width: 100%;
   margin: 0 auto;
-}
-
-.users-row {
-  text-align: center;
 }
 
 .table-row {
@@ -446,6 +443,11 @@ font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 a, .previous_page, .current {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.6em + 1.9vw);
+}
+
+#rid-reviews {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(0.9em + 1.4vw);  
 }
 
 .links-users {
