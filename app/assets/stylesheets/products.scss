@@ -8,7 +8,7 @@
 // }
 
 
-.products-display, h5, .links-combo {
+.products-display, h5, .links-combo, #rid-frame, .email-column, .link-table, .rated, .rating, .users-row {
   text-align: center;
 }
 
@@ -31,21 +31,51 @@ h5 {
   padding-bottom: 3vh;
 }
 
-#reviews {
+#reviews, #ratings-range {
   width: 100%;
   background-color: #5AD4C2;
   color: #FFE5CC;
   padding-left: -30px;
   padding-right: -30px;
-  // width: 63%;
-  // margin: 0 auto;
+  text-align: center;
+}
+
+#new_comment {
+  width: 63%;
+  margin: 0 auto;
+  background-color: #ff0;
+}
+
+#comment_body {
+  height: 6em;
+  line-height: 1.3em;
+}
+
+.product-reviews {
+  width: 63%;
+  margin: 0 auto;
+  background-color: #5AD4C2;
+  color: #FFE5CC;
+}
+
+.pages-frame {
+  width: 63%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#recorded-reviews {
+  width: 95%;
+}
+
+#rid-reviews {
+  top: 0.3em;
+  position: relative;
 }
 
 .product-input {
   top: 2vh;
   position: relative;
-  // text-shadow: 0.9px 0.9px 1.6px #000;
-  // text-shadow: -4.9px -0.6px 0.6px #000;
   font-weight: bolder;
   color: #5AD4C2;
 }
@@ -54,10 +84,6 @@ h5 {
   text-align: center;
   width: 39%;
   margin: 0 auto;
-}
-
-.email-column, .link-table {
-  text-align: center;
 }
 
 .link-table {
@@ -70,14 +96,7 @@ table {
   margin: 0 auto;
   text-align: center;
   table-layout: fixed;
-  // line-height: 1.3vw;
 }
-
-// #contact-form {
-//   margin-left: 16.3vw;
-//   margin: 0 auto;
-//   width: 73%;
-// }
 
 .label-email, .label-password {
   top: 3.3vh;
@@ -92,9 +111,18 @@ table {
   position: relative;
 }
 
-.form-control, .contact-label, #sign-up, #log-in, #new_user, #edit_user, #edit-product, .user-form, .access-click, .cancel-frame, #unhappy-frame, .link-frame {
+
+#contact-name {
+  width: 73%;
+}
+
+.form-control, .contact-label, .product-label, #sign-up, #log-in, #new_user, #edit_user, #edit-product, .user-form, .products-submit, .access-click, .cancel-frame, #unhappy-frame, .link-frame, .links-products-form, #error_explanation, .field_with_errors {
   width: 73%;
   margin: 0 auto;
+}
+
+#error_explanation {
+  margin-left: 13.5%;
 }
 
 .cancel-text {
@@ -126,7 +154,7 @@ table {
 }
 
 .contact-label, .name-label, .product-label {
-  top: 0.4vh;
+  top: 0.1em;
 }
 
 .check-box {
@@ -174,7 +202,7 @@ table {
   padding-right: 3.9vw;
 }
 
-// .links-edit {
+// .links-edit, .links-new {
 //   padding-left: 2.6vw;
 //   padding-right: 2.6vw;
 // }
@@ -186,10 +214,6 @@ h3, #product-title, #caption {
 .row {
   width: 100%;
   margin: 0 auto;
-}
-
-.users-row {
-  text-align: center;
 }
 
 .table-row {
@@ -255,8 +279,7 @@ label {
   color: #ff0;
 }
 
-.actions>input {
-  // width: 100%;
+.actions>input, #submit-review {
   line-height: 1.9em;
   color: #ff0;
   background-color: #F77E14;
@@ -278,7 +301,6 @@ input, textarea {
 }
 
 #new-products>a {
-  // margin-left: 2.3vw;
   margin-right: 0.5vw;
 }
 
@@ -369,10 +391,10 @@ th, #orders-descriptions, #orders-prices, .cancel-text, #unhappy-text {
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
-.reviews-text {
-  font-size: calc(0.8em + 1.7vw);
-  font-family: 'Syncopate', Arial Black, Futura, sans-serif;
-}
+// .reviews-text {
+//   font-size: calc(0.8em + 1.7vw);
+//   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
+// }
 
 .search-submit, label, .form_label, .reset {
 font-size: calc(0.4em + 0.9vw);
@@ -390,7 +412,7 @@ h3 {
   font-weight: bolder;
 }
 
-#reviews-header {
+#reviews-header, .reviews-text {
 font-size: calc(0.6em + 1.3vw);
 font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
@@ -400,7 +422,7 @@ font-family: 'Syncopate', Arial Black, Futura, sans-serif;
   font-size: calc(0.6em + 0.9vw);
 }
 
-#min-password {
+#min-password, #comment_body {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
   font-size: calc(0.4em + 0.9vw);
 }
@@ -425,17 +447,17 @@ font-family: 'Syncopate', Arial Black, Futura, sans-serif;
   font-size: calc(1.9em + 3.9vw);
 }
 
-a {
+a, .previous_page, .current {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.6em + 1.9vw);
+}
+
+#rid-reviews {
+  font-family: 'Monofett', Arial Black, Impact, sans-serif;
+  font-size: calc(0.9em + 1.4vw);
 }
 
 .links-users {
   font-family: 'Monofett', Arial Black, Impact, sans-serif;
   font-size: calc(1.7em + 2.7vw);
 }
-
-// .form-link {
-//   font-family: 'Monofett', Arial Black, Impact, sans-serif;
-//   font-size: calc(1.6em + 1.9vw);
-// }
