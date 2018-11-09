@@ -1,14 +1,20 @@
+<br>
+<br>
+<br>
+
 <p id="notice"><%= notice %></p>
 
-<p>
+<p class="show-names">
   <strong>First name:</strong>
   <%= @user.first_name %>
 </p>
 
-<p>
+<p class="show-names">
   <strong>Last name:</strong>
   <%= @user.last_name %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="link-frame">
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+</div>
