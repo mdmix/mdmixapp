@@ -64,8 +64,8 @@ h5 {
   text-align: center;
 }
 
-#recorded-reviews {
-  width: 95%;
+.reviews-lines {
+  width: 84%;
 }
 
 #rid-reviews {
@@ -111,12 +111,7 @@ table {
   position: relative;
 }
 
-
-#contact-name {
-  width: 73%;
-}
-
-.form-control, .contact-label, .product-label, #sign-up, #log-in, #new_user, #edit_user, #edit-product, .user-form, .products-submit, .access-click, .cancel-frame, #unhappy-frame, .link-frame, .links-products-form, #error_explanation, .field_with_errors {
+.form-control, .contact-label, #sign-up, #log-in, #new_user, #edit_user, #edit-product, .user-form, .access-click, .cancel-frame, #unhappy-frame, .link-frame, .links-products-form, #error_explanation, .field_with_errors {
   width: 73%;
   margin: 0 auto;
 }
@@ -310,6 +305,10 @@ h4 {
   text-align: center;
   width: 39%;
   margin: 0 auto;
+}
+
+.orders-frame {
+  padding-bottom: 0.9em;
 }
 
 .orders-overview {
