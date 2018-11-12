@@ -40,6 +40,11 @@ h5 {
   text-align: center;
 }
 
+.numerical-ratings {
+  position: relative;
+  bottom: 0.4em;
+}
+
 #new_comment {
   width: 63%;
   margin: 0 auto;
@@ -62,6 +67,8 @@ h5 {
   width: 63%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  bottom: 1em;
 }
 
 .reviews-lines {

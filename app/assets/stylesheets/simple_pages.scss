@@ -415,6 +415,10 @@ footer {
   .carousel-caption {
     transform: translateY(-125%);
   }
+  .numerical-ratings {
+    position: relative;
+    bottom: 0.1em;
+  }
 }
 
 /* code-combination to change nabvar breakpoint */
@@ -467,6 +471,14 @@ footer {
   .orders-details {
     height: 20.5em;
   }
+  .numerical-ratings {
+    position: relative;
+    top: 0.04em;
+  }
+  .pages-frame {
+    position: relative;
+    bottom: 2.4em;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -515,6 +527,10 @@ footer {
   .titles-spread {
     display: inline;
   }
+  .numerical-ratings {
+    position: relative;
+    top: 0.14em;
+  }
 }
 
 @media (min-width: 1669px) {
@@ -533,5 +549,9 @@ footer {
   }
   .orders-details {
     height: 29em;
+  }
+  .pages-frame {
+    position: relative;
+    bottom: 4.7em;
   }
 }

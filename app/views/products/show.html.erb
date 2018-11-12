@@ -47,11 +47,11 @@
           <b>
           <i class="fas fa-user-secret"></i>
           <span>Highest<br>
-            <%= @product.highest_rating_comment %></span>
+            <span class="numerical-ratings"><%= @product.highest_rating_comment&.rating %></span></span>
           <br>
           <i class="fas fa-user-secret"></i>
           <span>Lowest<br>
-            <%= @product.lowest_rating_comment %><br></span></b>
+            <span class="numerical-ratings"><%= @product.lowest_rating_comment&.rating %><br></span></span></b>
         </span>
         <br>
     </div>

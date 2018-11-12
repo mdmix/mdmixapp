@@ -4,6 +4,6 @@ class UserMailerPreview < ActionMailer::Preview
     UserMailer.contact_form("negevrobin@netscape.net", "Max", "HEY HEY HEY!")
   end
   def welcome
-    UserMailer.welcome(@user)
+    UserMailer.welcome(User.first)
   end
 end

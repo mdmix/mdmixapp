@@ -30,8 +30,9 @@
   </div>
 </div>
 
-<br>
-<br>
+<div class="pages-frame">
+  <%= will_paginate @products, :previous_label => '←', :next_label => '→' %>
+</div>
 
 <!-- <table>
   <thead>
