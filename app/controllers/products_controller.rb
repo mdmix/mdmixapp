@@ -1,5 +1,9 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  # before_action only: [:create, :new, :edit, :update, :destroy] do
+  #   redirect_to products_path, notice: 'Only an Admin can make these changes' unless current_user && current_user.admin
+  # end
+  load_and_authorize_resource
 
   # GET /products
   # GET /products.json

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe User do
-  context "when a user signs up"
+  context "when a user signs up" do
 
     it "is is valid with an email and a password" do
       expect(User.new(email: "negevrobin@netscape.net", password: "YoupiYoupi")).to be_valid
@@ -14,5 +14,7 @@ describe User do
     it "is is valid without an email but with a password" do
       expect(User.new(email: "", password: "YoupiYoupi")).to_not be_valid
     end
+
+  end
 
 end
