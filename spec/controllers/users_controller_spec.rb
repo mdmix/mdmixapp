@@ -1,10 +1,14 @@
 require 'rails_helper'
 
   describe UsersController, type: :controller do
-    @user = FactoryBot.build(:user)
-    # let(:userX) { User.create!(email: "woohoo@netscape.net", password: "woohoo") }
-    let(:userY) { User.create!(email: "youpi@netscape.net", password: "youpiyoupi") }
-    let(:userZ) { User.create!(email: "tralala@netscape.net", password: "tralala", admin: true) }
+    before do
+      @user = FactoryBot.create(:user)
+      # let(:userX) { User.create!(email: "woohoo@netscape.net", password: "woohoo") }
+      @user1 = FactoryBot.create(:user)
+      # let(:userY) { User.create!(email: "youpi@netscape.net", password: "youpiyoupi") }
+      @admin = FactoryBot.create(:user)
+      # let(:userZ) { User.create!(email: "tralala@netscape.net", password: "tralala", admin: true) }
+    end
 
     describe "GET #index"do
       context "when a user is not logged in" do
@@ -35,7 +39,7 @@ require 'rails_helper'
        context "when wrong user tries to access another user's details" do
 
           before do
-            sign_in userY
+            sign_in @user1
           end
 
           it "redirects to 'products-index' root page" do
@@ -58,12 +62,12 @@ require 'rails_helper'
         context "when an admin-user attempts to access another user's details" do
 
           before do
-            sign_in userZ
+            sign_in @admin
           end
 
           it "loads other user's correct details" do
             get :show, params: { id: @user.id }
-            expect(response).to be_ok
+            expect(response).to have_http_status(302)
             expect(assigns(:user)).to eq @user
           end
 
