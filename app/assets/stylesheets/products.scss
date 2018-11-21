@@ -31,6 +31,24 @@ h5 {
   padding-bottom: 3vh;
 }
 
+#pay-button {
+  text-align: center;
+  color: orange;
+  // background-image: none;
+}
+
+#pay-button>.stripe-button-el {
+  background-image: -webkit-linear-gradient(#ff0, #F77E14);
+}
+
+form>.stripe-button-el>span {
+  background-image: none;
+  background-color: magenta;
+  color: #ff0;
+  // padding: 0.5em;
+  padding-bottom: 1em;
+}
+
 #reviews, #ratings-range {
   width: 100%;
   background-color: #5AD4C2;
@@ -392,7 +410,7 @@ th, #orders-descriptions, #orders-prices, .cancel-text, #unhappy-text {
   font-size: calc(0.7em + 0.9vw);
 }
 
-.newly-created, .actions, h4, .orders-numbers, .order-info, .field-input, #product-title {
+.newly-created, .actions, h4, .orders-numbers, .order-info, .field-input, #product-title, form>.stripe-button-el>span {
   font-size: calc(0.6em + 1.8vw);
   font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }

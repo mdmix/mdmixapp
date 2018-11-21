@@ -36,6 +36,12 @@
     <br>
     <span class="product-input">$<%= @product.price %></span>
   </p>
+
+  <p class="newly-created">
+    <%= form_with(url: '/payments/create', id: "pay-button") do |form| %>
+      <%= render partial: "devise/shared/stripe_checkout_button" %>
+    <% end %>
+  </p>
   <br>
   <p class="newly-created" id="reviews">
     <strong class="product-header" id="reviews-header">Reviews – range:</strong>

@@ -78,3 +78,5 @@ gem 'rails-controller-testing'
 group :test do
   gem 'database_cleaner'
 end
+
+gem 'stripe'
