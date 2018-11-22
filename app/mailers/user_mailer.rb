@@ -17,14 +17,14 @@ class UserMailer < ApplicationMailer
       )
   end
 
-  def order_happening (user, product)
-    @user = user
-    @product = product
+  def order_happening (user, product, name)
+    # @user = user
     # @product = product
+    # name = name
       mail(
         :from => "max@maxdiamondmix.com",
         :to => user.email,
-        :subject => "Your order of #{product} is on-the-move"
+        :subject => "Your order of #{name} is on-the-move"
       )
   end
 

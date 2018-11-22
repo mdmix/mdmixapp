@@ -41,6 +41,7 @@
     <%= form_with(url: '/payments/create', id: "pay-button") do |form| %>
       <%= render partial: "devise/shared/stripe_checkout_button" %>
       <%= hidden_field_tag(:product_id, @product.id) %>
+      <%= hidden_field_tag(:product_name, @product.name) %>
     <% end %>
   </p>
   <br>
