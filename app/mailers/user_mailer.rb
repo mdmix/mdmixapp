@@ -19,6 +19,7 @@ class UserMailer < ApplicationMailer
 
   def order_happening (user, product)
     @user = user
+    @product = product
     # @product = product
       mail(
         :from => "max@maxdiamondmix.com",
