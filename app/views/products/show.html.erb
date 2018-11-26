@@ -8,6 +8,14 @@
 
 <% logger.debug "This product is up" %>
 <section class="product-info-background">
+
+  <p class="newly-created">
+    <strong class="product-header">Pic:</strong>
+    <br>
+    <span class="product-input"><%= image_tag(@product.image_url, class: "img-zoom img-responsive products-pix", data_zoom_image: 'image_tag(@product.big_image_url)' ) unless @product.image_url.nil? %></span>
+    <!-- also possible: 'image_tag(@product.image_url(:large))' -->
+  </p>
+
   <p class="newly-created">
     <strong class="product-header">Name:</strong>
     <br>
@@ -18,12 +26,6 @@
     <strong class="product-header">Description:</strong>
     <br>
     <span class="product-input"><%= @product.description %></span>
-  </p>
-
-  <p class="newly-created">
-    <strong class="product-header">Image url:</strong>
-    <br>
-    <span class="product-input"><%= @product.image_url %></span>
   </p>
 
   <p class="newly-created">
