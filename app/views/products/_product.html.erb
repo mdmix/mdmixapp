@@ -1,4 +1,5 @@
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 products-display">
+  <% cache product do %>
     <div class="products-background">
       <br></br>
       <%= image_tag(product.image_url, class: "img-responsive products-pix") unless product.image_url.nil? %>
@@ -14,6 +15,7 @@
       <br></br>
       <br></br>
     </div><!-- end products-background -->
+  <% end %>
   </div><!-- /col -->
   <!-- <br>
   <br> -->

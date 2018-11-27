@@ -61,6 +61,7 @@ GEM
     concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
     crass (1.0.4)
+    dalli (2.7.9)
     database_cleaner (1.7.0)
     devise (4.5.0)
       bcrypt (~> 3.0)
@@ -231,6 +232,8 @@ DEPENDENCIES
   byebug
   cancancan (~> 2.0)
   coffee-rails (~> 4.2)
+  connection_pool
+  dalli
   database_cleaner
   devise
   factory_bot_rails (~> 4.0)
