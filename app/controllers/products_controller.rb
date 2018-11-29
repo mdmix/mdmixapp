@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  # before_action :click, only: :show
   # before_action only: [:create, :new, :edit, :update, :destroy] do
   #   redirect_to products_path, notice: 'Only an Admin can make these changes' unless current_user && current_user.admin
   # end
@@ -20,6 +21,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    @product.viewed!
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
     # byebug
   end
@@ -79,6 +81,10 @@ class ProductsController < ApplicationController
     def set_product
       @product = Product.find(params[:id])
     end
+
+    # def click
+    #    Click.create
+    # end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params

@@ -85,3 +85,9 @@ gem 'stripe'
 gem 'dalli'
 
 gem 'connection_pool'
+
+gem 'redis-rails'
+
+gem 'redis-namespace'
+
+gem 'newrelic_rpm'
