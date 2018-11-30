@@ -88,6 +88,8 @@ gem 'connection_pool'
 
 gem 'redis-rails'
 
-gem 'redis-namespace'
+gem 'redis'
+
+# gem 'redis-namespace'
 
 gem 'newrelic_rpm'
