@@ -31,7 +31,7 @@ module Mdmixer
     config.generators.system_tests = nil
 
     # Part of Redis caching setup
-    config.cache_store = :redis_store, 'redis://127.0.0.1:6379/0/cache'
+    config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
     # { expires_in: 90.minutes }
 
   end
