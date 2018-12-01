@@ -66,6 +66,8 @@ end
 
 group :production do
   gem 'pg', '~> 0.20'
+
+  gem 'dalli'
 end
 
 gem 'devise'
@@ -81,8 +83,6 @@ group :test do
 end
 
 gem 'stripe'
-
-gem 'dalli'
 
 gem 'connection_pool'
 

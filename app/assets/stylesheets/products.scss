@@ -31,6 +31,11 @@ h5 {
   padding-bottom: 3vh;
 }
 
+.badge {
+  background-color: #5AD4C2;
+  color: #ff0;
+}
+
 #pay-button {
   text-align: center;
   color: orange;
@@ -92,7 +97,7 @@ form>.stripe-button-el>span {
   bottom: 1em;
 }
 
-.reviews-lines {
+.reviews-lines, .pix-lines {
   width: 84%;
 }
 
@@ -444,7 +449,7 @@ font-size: calc(0.6em + 1.3vw);
 font-family: 'Syncopate', Arial Black, Futura, sans-serif;
 }
 
-.products-details {
+.products-details, .badge {
   font-family: 'Fugaz One', Arial Black, Impact, sans-serif;
   font-size: calc(0.6em + 0.9vw);
 }
