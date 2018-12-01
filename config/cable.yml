@@ -5,6 +5,7 @@ test:
   adapter: async
 
 production:
-  adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  adapter: postgresql
+  url: postgres://crsnerznxmyjbt:2e02123d012e90ce0406b47d648fd149fd5eaa087e85f92b26b49f27ccaeb0c7@ec2-54-227-241-179.compute-1.amazonaws.com:5432/db42q7foi7au8e
+  # url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
   channel_prefix: mdmixer_production

@@ -103,4 +103,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'mdmixer.herokuapp.com' }
 
+  config.web_socket_server_url = "wss://mdmixer.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://mdmixer.herokuapp.com', 'http://mdmixer.herokuapp.com']
+
 end
