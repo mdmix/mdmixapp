@@ -7,7 +7,7 @@
 <br>
 
 <!-- <% logger.debug "This product is up" %> -->
-<section class="product-info-background">
+<section class="product-info-background" data-product-id="<%= @product.id %>">
 
 <% cache @product do %>
   <p class="newly-created">

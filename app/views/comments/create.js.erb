@@ -1,8 +1,6 @@
 // $("#new_comment").hide();
 $("#new_comment").html("Review was created successfully").css({"line-height": "4em", "color": "#ff0", "background-color": "#F77E14", "font-size": "calc(0.9em + 1.8vw)", "font-family": "'Fugaz One', Arial Black, Impact, sans-serif"});
 
-$('.product-reviews').prepend("<%= j render @comment %>");
-
 $("#average-rating").attr('data-score', "<%= @product.average_rating %>");
 
 refreshRating();
