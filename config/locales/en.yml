@@ -32,4 +32,4 @@
 en:
   hello: "Hello world"
   unauthorized:
-    default: "Only an Admin can make these changes"
+    default: "Only an Admin can go here"

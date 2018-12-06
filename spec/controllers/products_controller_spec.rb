@@ -24,7 +24,7 @@ describe ProductsController, type: :controller do
   describe "GET #show" do
     context "when any user goes to specific product page" do
 
-      it "loads 'show' page correctly – with or without comments-related abilities" do
+      it "loads 'show' page correctly" do
         get :show, params: {id: @product1.id}
         expect(assigns(:product)).to eq @product1
         expect(response).to be_ok
@@ -34,8 +34,62 @@ describe ProductsController, type: :controller do
     end
   end
 
+  describe "GET #new" do
+    context "when any user attempts to create a product" do
+
+      it "does not load 'new' page" do
+        get :new
+        expect(response).to redirect_to(root_url)
+      end
+
+    end
+  end
+
+  describe "GET #new" do
+    context "when an admin attempts to create a product" do
+
+      before do
+        sign_in @admin
+      end
+
+      it "does not load 'new' page" do
+        get :new
+        expect(response).to render_template('new')
+        expect(response).to be_ok
+      end
+
+    end
+  end
+
+  describe "GET #edit" do
+    context "when any user attempts to edit a product" do
+
+      it "does not load 'edit' page" do
+        get :edit, params: {id: @product1.id}
+        expect(response).to redirect_to(root_url)
+      end
+
+    end
+  end
+
+  describe "GET #edit" do
+    context "when an admin attempts to edit a product" do
+
+      before do
+        sign_in @admin
+      end
+
+      it "does not load 'new' page" do
+        get :edit, params: {id: @product1.id}
+        expect(response).to render_template('edit')
+        expect(response).to be_ok
+      end
+
+    end
+  end
+
   describe "POST #create" do
-    context "when admin-user creates a new product page" do
+    context "when admin creates a new product page" do
 
       before do
         sign_in @admin
@@ -43,13 +97,11 @@ describe ProductsController, type: :controller do
       end
 
       it "loads new product's 'show' page" do
-        # @product1 = @admin.create(:product)
         post :create, params: { product: {name: "Touch of Evil", description: "Good stuff", image_url: "Touch-of-evil.jpeg", color: "b/w", price: 59.0 } }
-        # @product1 = FactoryBot.create(:product)
-        # @product2 = Product.create!(name: "Othello", description: "Good stuff", image_url: "Touch-of-evil.jpeg", price: 25.0)
         expect(response).to have_http_status(302)
         expect(response).to redirect_to(Product.last)
         expect(response).to redirect_to('/products/2')
+
       end
 
     end
