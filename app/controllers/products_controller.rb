@@ -22,7 +22,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product.viewed!
-    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
+    @comments = @product.comments.order('created_at DESC').paginate(:page => params[:page], :per_page => 2)
     # byebug
   end
 
